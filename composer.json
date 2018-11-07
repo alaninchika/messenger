@@ -1,6 +1,6 @@
 {
     "name": "alaninchika/messenger",
-    "description": "A PHP library for sending messages.",
+    "description": "A PHP library for sending email or sms messages.",
     "type": "library",
     "keywords": ["sms", "email", "Twilio", "messenger"],
     "homepage": "https://github.com/alaninchika/messenger",
