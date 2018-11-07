@@ -29,7 +29,7 @@ class TwilioSMS implements SMSProvider
      * @param $number
      * @throws \Twilio\Exceptions\ConfigurationException
      */
-    function __construct($sid, $token, $number)
+    public function __construct($sid, $token, $number)
     {
         $this->client = new Client($sid, $token);
         $this->sid = $sid;
@@ -81,12 +81,12 @@ class TwilioSMS implements SMSProvider
     {
         try {
             $account = $this->client->api->v2010->accounts($this->sid)->fetch();
+
+            if ($account) {
+                return true;
+            }
         } catch (\Exception $e) {
             return false;
-        }
-
-        if ($account) {
-            return true;
         }
 
         return false;
