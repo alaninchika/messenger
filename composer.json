@@ -1,0 +1,21 @@
+{
+    "name": "alaninchika/messenger",
+    "description": "A PHP library for sending messages.",
+    "type": "library",
+    "keywords": ["sms", "email", "Twilio", "messenger"],
+    "homepage": "https://github.com/alaninchika/messenger",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0",
+        "twilio/sdk": "5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {"Messenger\\":"src/"}
+    },
+    "scripts": {
+    }
+}
