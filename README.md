@@ -7,7 +7,8 @@ A PHP library for sending messages.
 [![Build Status](https://travis-ci.com/alaninchika/messenger.svg?branch=master)](https://travis-ci.com/alaninchika/messenger)
 [![Total Downloads](https://poser.pugx.org/alaninchika/messenger/downloads.svg)](https://packagist.org/packages/alaninchika/messenger)
 [![License](https://poser.pugx.org/alaninchika/messenger/license.svg)](https://packagist.org/packages/alaninchika/messenger)
-[![Coverage Status](https://coveralls.io/repos/github/alaninchika/messenger/badge.svg?branch=master)](https://coveralls.io/github/alaninchika/messenger?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/alaninchika/messenger/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/alaninchika/messenger/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/alaninchika/messenger/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alaninchika/messenger/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alaninchika/messenger/?branch=master)
 
 ## Installation
