@@ -82,7 +82,7 @@ class TwilioSMS implements SMSProvider
         try {
             $account = $this->client->api->v2010->accounts($this->sid)->fetch();
 
-            if ($account) {
+            if ($account->friendlyName && $account->sid) {
                 return true;
             }
         } catch (\Exception $e) {
