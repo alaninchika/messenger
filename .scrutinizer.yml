@@ -10,6 +10,13 @@ build:
         -
           command: phpcs-run
           use_website_config: true
+    code-coverage:
+      tests:
+        override:
+        - command: ./vendor/bin/phpunit -c phpunit.xml tests/ --coverage-clover=coverage.clover
+          coverage:
+            file: coverage.clover
+            format: php-clover
     tests: true
 
 filter:
@@ -34,4 +41,4 @@ checks:
 tools:
   external_code_coverage:
     timeout: 600
-    runs: 3
+    runs: 2
