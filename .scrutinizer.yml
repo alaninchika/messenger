@@ -3,6 +3,7 @@ build:
     coverage:
       tests:
         override:
+          - php-scrutinizer-run
           coverage:
             file: build/logs/clover.xml
             format: clover
