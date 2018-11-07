@@ -4,7 +4,7 @@ A PHP library for sending messages.
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg)](https://php.net/)
 [![Latest Stable Version](https://img.shields.io/packagist/v/alaninchika/messenger.svg)](https://packagist.org/packages/alaninchika/messenger)
-[![Build Status](https://travis-ci.org/alaninchika/messenger.svg?branch=master)](https://travis-ci.org/alaninchika/messenger)
+[![Build Status](https://travis-ci.com/alaninchika/messenger.svg?branch=master)](https://travis-ci.com/alaninchika/messenger)
 [![Total Downloads](https://poser.pugx.org/alaninchika/messenger/downloads.svg)](https://packagist.org/packages/alaninchika/messenger)
 [![License](https://poser.pugx.org/alaninchika/messenger/license.svg)](https://packagist.org/packages/alaninchika/messenger)
 [![Coverage Status](https://coveralls.io/repos/github/alaninchika/messenger/badge.svg?branch=master)](https://coveralls.io/github/alaninchika/messenger?branch=master)
