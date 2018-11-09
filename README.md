@@ -44,6 +44,23 @@ $twilio = new TwilioSMS($account_sid, $auth_token, $twilio_number);
 $smsMessenger->registerSMSProvider('twilio', $twilio);
 ```
 
+```php
+use Messenger\SMSMessenger;
+$smsMessenger = new SMSMessenger();
+
+$sns_client = new SnsClient([
+    'region'  => 'eu-west-1',
+    'version' => 'latest',
+    'credentials' => [
+        'key' => 'AWS_ACCESS_KEY_ID',
+        'secret' => 'AWS_SECRET_ACCESS_KEY',
+    ]
+]);
+
+$sns = new SnsSMS($sns_client, 'SNS_TOPIC');
+$smsMessenger->registerSMSProvider('sns', $sns);
+```
+
 ## SMS Usages
 
 ```php
@@ -51,13 +68,13 @@ $smsMessenger->registerSMSProvider('twilio', $twilio);
 $result = $smsMessenger->sendMessage('15017122664', 'test message');
 
 // Sending sms message with a specific registered provider 
-$result = $smsMessenger->sendMessageWith('registered_provider', '15017122662', 'test message');
+$result = $smsMessenger->sendMessageWith('sns', '15017122662', 'test message');
 
 // Success result
-['provider' => 'registered_provider', 'result' => ['message_id' => 'e234-11e8', 'sent' => true]]
+['provider' => 'sns', 'result' => ['message_id' => 'e234-11e8', 'sent' => true]]
 
 // Failed result
-['provider' => 'registered_provider', 'result' => ['error' => 'error message', 'sent' => false]]
+['provider' => 'sns', 'result' => ['error' => 'error message', 'sent' => false]]
 ```
 
 ## Contribute
