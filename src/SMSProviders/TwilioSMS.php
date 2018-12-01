@@ -49,7 +49,7 @@ class TwilioSMS implements SMSProvider
             $result = $this
                 ->client
                 ->messages
-                ->create('+' . $to, ['from' => $this->number, 'body' => $message]);
+                ->create($to, ['from' => $this->number, 'body' => $message]);
 
             $sid = $result->sid;
         } catch (\Exception $e) {

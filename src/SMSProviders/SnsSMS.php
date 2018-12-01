@@ -47,7 +47,7 @@ class SnsSMS implements SMSProvider
 
             $data = $this->client->publish([
                 'Message' => $message,
-                'PhoneNumber' => '+' . $to,
+                'PhoneNumber' => $to,
                 'MessageAttributes' => [
                     'AWS.SNS.SMS.SenderID' => [
                         'DataType' => 'String',
